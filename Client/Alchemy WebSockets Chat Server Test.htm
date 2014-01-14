@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://chat.alchemywebsockets.net/ -->
+<html lang="en" slick-uniqueid="3" class=" js websockets"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Alchemy WebSockets Chat Server Test</title> 		
+     <link href="./Alchemy WebSockets Chat Server Test_files/css/grid.css" rel="stylesheet" /> 
+    <link href="./Alchemy WebSockets Chat Server Test_files/css/styles.css" rel="stylesheet" /> 
+    <script src="./Alchemy WebSockets Chat Server Test_files/modernizr-custom-2.0.min.js"></script><style type="text/css"></style><style type="text/css"></style>
+    <link type="text/css" rel="stylesheet" href="chrome-extension://lhapfdljobcmfjgdjmnpoogogilhhojf/css/capture.css"></head> 
+
+    <body xiaoxisudi_screen_capture_injected="true" style=""> 
+      <div class="container_12"> 
+        <header class="grid_12"> 
+          <h1>Alchemy WebSockets Chat Server Test</h1> 
+          <h2>Status: <span id="status" class="offline">Offline</span> <button id="disconnect">Disconnect</button></h2><br>
+		  <h2>PollData: <span id="status" class="offline">PollData</span> <button id="PollData">PollData</button></h2><br>
+		  <span>Data: <span id="data">???</span></span><br>
+        </header> 
+      </div> 
+
+      <div class="clear"></div> 
+
+      <div class="container_12"> 
+        <section class="grid_12"> 
+          <form id="connectToServer" method="get" action="http://chat.alchemywebsockets.net/sockets.html">
+            <fieldset title="Connect to Server"> 
+            <legend>Connect to Server</legend> 
+            Server: <input id="server" value="localhost"> : <input id="port" value="82">
+            <button id="connect" type="submit">Connect</button>
+            </fieldset>
+          </form>
+
+          <br> 
+
+          <form id="registerName" method="get" action="http://chat.alchemywebsockets.net/sockets.html" style="display: none;"> 
+            <fieldset title="Register Username"> 
+            <legend>Register Username</legend> 
+            <input id="name">
+            <button id="register" type="submit">Register</button> 
+            </fieldset>	
+          </form> 
+
+          <form id="sendMessage" method="get" action="http://chat.alchemywebsockets.net/sockets.html" style="display: none;"> 
+            <fieldset title="Chat"> 
+            <legend>Chat</legend> 
+            <input id="message" type="text">
+            <button id="send" type="submit">Send</button> 
+            </fieldset>	
+          </form> 
+        </section>
+
+        <div class="clear"></div>
+
+        <section id="chat" class="grid_12">
+          <h1>Chat</h1>
+          <span>Users online: <span id="onlineUsers">???</span></span><br>
+          <pre id="results"></pre> 
+          </section>
+        </div> 
+
+        <div class="clear"></div> 
+
+        <div class="container_12"> 
+          <footer class="grid_12"> 
+          <a href="http://www.olivinelabs.com/index.php/projects/71-alchemy-websockets" id="poweredBy" target="_blank">Powered by Alchemy Websockets</a>
+          </footer> 
+        </div> 
+
+        <script src="./Alchemy WebSockets Chat Server Test_files/jquery-1.7.1.min.js"></script> 
+        <script src="./Alchemy WebSockets Chat Server Test_files/json2.js"></script> 
+
+        <script src="./Alchemy WebSockets Chat Server Test_files/swfobject.js"></script>
+        <script src="./Alchemy WebSockets Chat Server Test_files/alchemy-client.js"></script> 
+
+        <!-- this is the demo code -->
+        <script src="./Alchemy WebSockets Chat Server Test_files/startup.js"></script>  
+</body></html>

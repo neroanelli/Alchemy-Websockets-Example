@@ -1,0 +1,6 @@
+[submodule "Client/js/web-socket-js"]
+	path = Client/js/web-socket-js
+	url = https://github.com/gimite/web-socket-js.git
+[submodule "Client/js/alchemy-websockets-client"]
+	path = Client/js/alchemy-websockets-client
+	url = git://github.com/Olivine-Labs/Alchemy-Websockets-Client-Library.git
